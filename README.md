@@ -5,3 +5,4 @@
 - [Gyroscope Working](https://lastminuteengineers.com/mpu6050-accel-gyro-arduino-tutorial/)
 - [Gyro Sensor MPU-6050 Datasheet](https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf)
 - [Gyro Sensor MPU-6050 Register Mapping](https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf)
+- [Artix-7 100T CSG234 Constraints](https://github.com/Digilent/digilent-xdc/blob/master/Arty-A7-100-Master.xdc)
