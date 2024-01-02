@@ -3,6 +3,7 @@
 module wrapper_tb;
     
     reg clk_pll;
+    wire clk_div;
     wire clk;
     reg rst;
     reg en;
@@ -17,7 +18,8 @@ module wrapper_tb;
 
     wrapper uut (
         .clk_pll (clk_pll),
-        // .clk (clk),
+        .clk_div (clk_div),
+        .clk (clk),
         .rst (rst),
         .en (en),
         .register_selector (register_selector),
@@ -39,9 +41,9 @@ module wrapper_tb;
         #10 rst = 1;
         #50 rst = 0;
         for (integer i = 0; i < 16; i = i + 1) begin
-            #50000 register_selector = i;
-            #100 en = 1;
-            #100 en = 0;
+            #9000000 register_selector = i;
+            #1000 en = 1;
+            #100000 en = 0;
         end
         #50000 $finish;
     end
